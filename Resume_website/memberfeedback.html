@@ -18,93 +18,31 @@
 
         <div id="container--main">
 
-            <h1>Nashville Turo Market Analysis</h1> 
+            <h1>Client Feedback Pipeline</h1> 
 
             <div class="line-break"></div>
 
-            <h2>Turo Description</h2>
-            <p>Often described as the "Airbnb for cars”, Turo is a peer-to-peer car sharing marketplace where individuals can rent out their personal vehicles to others.</p>
+            <h2>Description</h2>
+            <p>The client is implementing a new software system and needs to migrate millions of records, many of which require extensive cleaning before migration. 
+                I’ve developed a pipeline that automates the feedback process, generating an organized Excel workbook that highlights the records needing attention. 
+                This allows the client to easily identify and address any issues before the migration.</p>
 
             <div class="line-break"></div>
 
-
-
-            <h2>Project Goals</h2>
-            <ol>
-                <li>The primary goal of this project is to analyze the Turo market in Nashville, TN, and offer recommendations on the most profitable makes, 
-                    models, and years for potential investors looking to buy vehicles for hosting on Turo to maximize their profits.</li>
-                <li>The secondary goal is to apply statistical tests to enhance decision-making strategies for investors who have already listed a vehicle on the platform.</li>
-            </ol>
-
-            <div class="line-break"></div>
-
-
-
-            <h2>Methods</h2>
-            <h3>Scraping data from Turo</h3>
-            <ol>
-                <li><strong>Data Collection:</strong> Data was scraped from the Turo website on October 1, 2023, and again on January 2, 2024.</li>
-                <li><strong>Trip Calculation:</strong> The number of trips for each vehicle during the study period (Q4 2023) was determined by 
-                    subtracting the total trips on October 1, 2023, from the total trips on January 2, 2024.</li>
-                <li><strong>Trip Duration Assumption:</strong> An average trip length of three days was assumed, as Turo does not provide individual trip durations.</li>
-                <li><strong>Revenue Estimation: </strong>Estimated total revenue for each vehicle during the study period was calculated using the formula: estimated revenue = daily price * 3 * number of trips.
-                </li>
-            </ol>
-
-            <br>
-
-            <h3>Scraping data from Autotrader</h3>
-            <ol>
-                <li><strong>Data Collection: </strong>At the end of the study period, data was scraped from Autotrader for vehicles within a 50-mile radius of Nashville, TN.</li>
-                <li><strong>Grouping and Averaging: </strong>Vehicles were grouped by make, model, and year, and the average price for each group was calculated.</li>
-                <li><strong>Price Mapping: </strong>Average prices were mapped back to the Turo dataset to estimate the value of each vehicle.</li>
-                <li><strong>Estimating Missing Values: </strong>For the 103 out of 469 vehicles in the Turo dataset without matching Autotrader values, 
-                    estimates were generated using ChatGPT based on make, model, and year.
-                </li>
-            </ol>
-
-            <br>
-
-            <h3>ROI Calculation and Usage</h3>
-            <ol>
-                <li><strong>ROI Calculation: </strong>The return on investment (ROI) for each vehicle over the three-month period was calculated using the formula: 
-                    ROI = estimated revenue / estimated vehicle value.</li>
-                <li><strong>ROI Interpretation: </strong>ROI represents the percentage of the vehicle's value that was generated as revenue in the three-month study period.</li>
-                <li><strong>ROI Application: </strong>This ROI metric will be used throughout the analysis as the primary measure of a vehicle's success on the platform.</li>
-            </ol>
-
-            <div class="line-break"></div>
 
 
             <h2>Project Links</h2>
 
-
-            <h3>Github Repo</h3>
-                <a href="https://github.com/Isaac110820/Turo-Market-Analysis">Click here </a><span>to view the repository</span>
-
-            <h3>Results</h3>
-                <a href="assets/pdf/Turo Results3.pdf">Click here</a><span> to view a PDF summary of the findings</span>
-
-            <h3>Analysis</h3>
-                <a href="https://github.com/Isaac110820/Turo-Market-Analysis/blob/main/ROI_analysis.ipynb">Click here</a><span> to view the code used for the analysis</span>
-
-            <h3>Data cleaning/merging</h3>
-                <a href="https://github.com/Isaac110820/Turo-Market-Analysis/blob/main/Turo_cleaning_code10-1-2023.ipynb">Click here</a><span> to view the Turo data cleaning code</span>
-                <br>
-                <a href="https://github.com/Isaac110820/Turo-Market-Analysis/blob/main/Autotrader%20Cleaning.ipynb">Click here</a><span> to view the Autotrader data cleaning code</span>
-                <br>
-                <a href="Merging_Q4_2023.ipynb">Click here</a><span> to view the code to merge datasets</span>
-                <br>
-
-            <h3>PowerBI Dashboard</h3>
-                <a href="https://app.powerbi.com/groups/me/reports/f3a29277-5153-4306-a2e7-1e2afb35cb8f?experience=power-bi">Click here</a><span> to view the PowerBI dashboard</span>
-
-            <br>
-            <br>
-            <br>
-            <br>
-
-            
+            <h4>Project Code:</h4>
+            <a href="https://github.com/Isaac110820/Client-Feedback-Pipeline/blob/main/Vision%20Member%20Feedbacking%20(one%20workbook).ipynb">Click here </a><span>to view the code for the feedback pipeline</span>
+            <div class="line-break"></div>
+            <h4>Excel Files</h4>
+            <a href="https://github.com/Isaac110820/Client-Feedback-Pipeline">Click here </a><span>to access the repository where you can download the following Excel files:</span>
+            <ol>
+                <li><strong>Example Raw Data:</strong> An example of the initial data as received from the client.</li>
+                <li><strong>Example Client Feedback File:</strong> An example of the feedback file generated by the pipeline, which would be provided to the client.</li>
+            </ol>
+            <p><em>Note: The data in these files is entirely fictional and intended for illustrative purposes only.</em></p>
         </div>
 
 
